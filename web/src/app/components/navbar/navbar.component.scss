@@ -1,0 +1,15 @@
+@import "~src/variables";
+
+.navbar {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .2);
+}
+
+.navbar img {
+  width: 55px;
+  filter: invert(74%) sepia(75%) saturate(2123%) hue-rotate(344deg) brightness(103%) contrast(84%);
+}

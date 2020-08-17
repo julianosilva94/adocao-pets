@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  app:
+    build:
+      ./docker/angular-cli
+    volumes:
+      - .:/usr/app
+    ports:
+      - "4200:4200"
+    expose:
+      - 4200
+    command: ng serve --host 0.0.0.0
+
+  angular-cli:
+    build:
+      ./docker/angular-cli
+    volumes:
+      - .:/usr/app
+    command: ng
