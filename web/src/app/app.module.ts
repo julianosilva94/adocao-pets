@@ -8,6 +8,7 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import { PetCardComponent } from './components/pet-card/pet-card.component';
 import { PetCardDeckComponent } from './components/pet-card-deck/pet-card-deck.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
