@@ -1,0 +1,50 @@
+@import "~src/variables";
+
+.pet-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  color: $primary-color;
+
+  &:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
+    transform: scale(1.025);
+    text-decoration: underline;
+  }
+
+  .pet-card__image-container {
+    width: 100%;
+    height: 200px;
+
+    .background-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px 4px 0 0;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .pet-card__content {
+    padding: 5px 10px;
+
+    .pet-card__name {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .pet-card__info {
+      margin-top: 5px;
+
+      .pet-card__location {
+        font-size: 0.7rem;
+      }
+
+      .pet-card__sex {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

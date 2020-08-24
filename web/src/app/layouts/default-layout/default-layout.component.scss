@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main";
+  grid-row-gap: 20px;
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+}
