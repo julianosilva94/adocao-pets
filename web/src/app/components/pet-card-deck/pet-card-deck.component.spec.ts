@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PetCardDeckComponent } from './pet-card-deck.component';
+import {PetCardDeckComponent} from './pet-card-deck.component';
 
 describe('PetCardDeckComponent', () => {
   let component: PetCardDeckComponent;
@@ -8,9 +8,9 @@ describe('PetCardDeckComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PetCardDeckComponent ]
+      declarations: [PetCardDeckComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
