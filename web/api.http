@@ -1,1 +1,12 @@
+POST http://localhost:5000/v1/pets
+Content-Type: application/json
+
+{
+  "name": "Jack",
+  "sex": "male",
+  "location": "Cachoeirinha, RS"
+}
+
+###
 GET http://localhost:5000/v1/pets
+

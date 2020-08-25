@@ -4,10 +4,10 @@
          style="background-image: url('https://www.zooplus.pt/magazine/wp-content/uploads/2018/06/deutscher-boxer-tabby.jpg')"></div>
   </div>
   <div class="pet-card__content">
-    <p class="pet-card__name">Jack</p>
+    <p class="pet-card__name">{{ pet.name }}</p>
     <div class="pet-card__info">
-      <p class="pet-card__location">Cachoeirinha, RS</p>
-      <p class="pet-card__sex">Macho</p>
+      <p class="pet-card__location">{{ pet.location }}</p>
+      <p class="pet-card__sex">{{ pet.sex | petSex }}</p>
     </div>
   </div>
 </div>

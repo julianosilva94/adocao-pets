@@ -15,7 +15,7 @@ export class HomePageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.petService.getAll().subscribe(console.log);
+    this.petService.getAll().subscribe(data => this.pets = data);
   }
 
 }

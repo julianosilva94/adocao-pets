@@ -1,14 +1,1 @@
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
-<app-pet-card></app-pet-card>
+<app-pet-card *ngFor="let pet of pets" [pet]="pet"></app-pet-card>
