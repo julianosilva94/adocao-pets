@@ -1,12 +1,14 @@
+@import "~src/variables";
+
 :host {
   display: block;
-  background-color: white;
-  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba($primary-color, 0.5);
 
   #navbar {
     max-width: 1280px;
+    height: 80px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -23,7 +25,8 @@
 
         img {
           width: 40px;
-          filter: invert(74%) sepia(75%) saturate(2123%) hue-rotate(344deg) brightness(103%) contrast(84%);
+          //filter: invert(74%) sepia(75%) saturate(2123%) hue-rotate(344deg) brightness(103%) contrast(84%);
+          filter: invert(42%) sepia(12%) saturate(2554%) hue-rotate(231deg) brightness(98%) contrast(86%);
         }
       }
     }
@@ -35,6 +38,7 @@
       justify-content: flex-end;
 
       a {
+        color: $primary-color;
       }
     }
   }
@@ -42,6 +46,7 @@
   @media (max-width: 768px) {
     #navbar {
       max-width: 100vw;
+      padding: 10px 40px;
     }
   }
 }

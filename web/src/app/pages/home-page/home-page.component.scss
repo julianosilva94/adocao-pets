@@ -1,7 +1,7 @@
 #pet-cards {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -10,6 +10,7 @@
 @media (max-width: 768px) {
   #pet-cards {
     max-width: 100vw;
+    padding: 0 40px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
