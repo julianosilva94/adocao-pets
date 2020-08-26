@@ -11,6 +11,7 @@ import {HomePageComponent} from './pages/home-page/home-page.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PetService} from './services/pet.service';
 import {PetSexPipe} from './pipes/pet-sex.pipe';
+import {LoginPageComponent} from './pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {PetSexPipe} from './pipes/pet-sex.pipe';
     PetCardDeckComponent,
     HomePageComponent,
     PetSexPipe,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
