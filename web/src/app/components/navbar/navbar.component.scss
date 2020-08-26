@@ -1,13 +1,47 @@
-#navbar {
-  display: flex;
+:host {
+  display: block;
   background-color: white;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .3);
 
-  img {
-    width: 40px;
-    filter: invert(74%) sepia(75%) saturate(2123%) hue-rotate(344deg) brightness(103%) contrast(84%);
+  #navbar {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    #brand {
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 40px;
+          filter: invert(74%) sepia(75%) saturate(2123%) hue-rotate(344deg) brightness(103%) contrast(84%);
+        }
+      }
+    }
+
+    #account {
+      grid-column: 3;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    #navbar {
+      width: 100vw;
+    }
   }
 }
