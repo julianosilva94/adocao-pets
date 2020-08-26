@@ -6,6 +6,7 @@
   border: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
+  color: dimgrey;
 }
 
 :root {
@@ -21,8 +22,41 @@
       list-style: none;
     }
 
+    h1, h2, h3 {
+      color: $primary-color;
+    }
+
     a {
       text-decoration: none;
+    }
+
+    input {
+      background-color: whitesmoke;
+      border: 1px solid rgba($primary-color, .5);
+      border-radius: 10px;
+      font-size: 1rem;
+
+      &:focus {
+        border-radius: 10px;
+      }
+
+      &:active {
+        border-radius: 10px;
+      }
+    }
+
+    button {
+      background-color: rgba($primary-color, 1);
+      color: white;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 1rem;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .95;
+      }
     }
   }
 }
